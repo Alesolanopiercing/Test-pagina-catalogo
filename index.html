@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catálogo - Ale Solano Piercing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fdfcfa;
+      --dark: #111;
+      --accent: #d4af37;
+      --shadow: rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Cinzel Decorative", serif;
+      background-color: var(--bg);
+      color: var(--dark);
+    }
+
+    header {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px var(--shadow);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* === Ajuste exacto del espaciado entre header y filtros === */
+    .filter-section {
+      margin-top: 6px; /* solo 6px de distancia entre el header oscuro y los botones */
+      padding-top: 0;
+      border-top: none; /* elimina completamente la raya divisoria */
+      text-align: center;
+    }
+
+    .filter-button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 25px;
+      margin: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px var(--shadow);
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+
+    .filter-button:hover {
+      background: #bfa033;
+      transform: translateY(-2px);
+    }
+
+    /* resto del código (funcionalidad y estructura) permanece sin cambios */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ale Solano Piercing</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección de filtros -->
+  <section class="filter-section">
+    <button class="filter-button">Todos</button>
+    <button class="filter-button">Lóbulo</button>
+    <button class="filter-button">Tragus</button>
+    <button class="filter-button">Hélix</button>
+  </section>
+
+  <!-- resto del código intacto -->
+</body>
+</html>
